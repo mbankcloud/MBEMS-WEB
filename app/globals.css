@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: hsl(220 20% 97%);
+  --color-foreground: hsl(220 30% 12%);
+  --color-card: hsl(0 0% 100%);
+  --color-card-foreground: hsl(220 30% 12%);
+  --color-popover: hsl(0 0% 100%);
+  --color-popover-foreground: hsl(220 30% 12%);
+  --color-primary: hsl(220 90% 25%);
+  --color-primary-foreground: hsl(0 0% 100%);
+  --color-secondary: hsl(220 15% 94%);
+  --color-secondary-foreground: hsl(220 30% 20%);
+  --color-muted: hsl(220 15% 94%);
+  --color-muted-foreground: hsl(220 15% 45%);
+  --color-accent: hsl(43 96% 52%);
+  --color-accent-foreground: hsl(220 90% 15%);
+  --color-destructive: hsl(0 84% 55%);
+  --color-destructive-foreground: hsl(0 0% 100%);
+  --color-border: hsl(220 20% 88%);
+  --color-input: hsl(220 20% 88%);
+  --color-ring: hsl(220 90% 25%);
+  --radius: 0.5rem;
+}
+
+/* CSS variable bridge for Radix/shadcn compatibility */
+:root {
+  --background: 220 20% 97%;
+  --foreground: 220 30% 12%;
+  --card: 0 0% 100%;
+  --card-foreground: 220 30% 12%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 220 30% 12%;
+  --primary: 220 90% 25%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 220 15% 94%;
+  --secondary-foreground: 220 30% 20%;
+  --muted: 220 15% 94%;
+  --muted-foreground: 220 15% 45%;
+  --accent: 43 96% 52%;
+  --accent-foreground: 220 90% 15%;
+  --destructive: 0 84% 55%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 220 20% 88%;
+  --input: 220 20% 88%;
+  --ring: 220 90% 25%;
+  --radius: 0.5rem;
+}
+
+* {
+  border-color: hsl(var(--border));
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.pulse-dot {
+  animation: pulse-dot 1.5s ease-in-out infinite;
+}
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.3); }
+}

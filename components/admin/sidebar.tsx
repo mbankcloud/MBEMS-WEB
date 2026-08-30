@@ -46,7 +46,7 @@ export function AdminSidebar({ userName }) {
             <Landmark className="h-5 w-5 text-white" />
           </div>
           <div>
-            <div className="text-white font-bold text-sm">BEMS</div>
+            <div className="text-white font-bold text-sm">TAIN ElectAI</div>
             <div className="text-white/60 text-xs">Super Admin</div>
           </div>
         </div>
@@ -85,7 +85,7 @@ export function AdminSidebar({ userName }) {
         <button onClick={() => setOpen(true)} className="text-white p-1"><Menu className="h-6 w-6" /></button>
         <div className="flex items-center gap-2">
           <Landmark className="h-5 w-5 text-white" />
-          <span className="text-white font-bold text-sm">BEMS Admin</span>
+          <span className="text-white font-bold text-sm">TAIN ElectAI Admin</span>
         </div>
       </div>
       {open && (

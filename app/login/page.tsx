@@ -49,7 +49,7 @@ export default function LoginPage() {
               <Landmark className="h-7 w-7 text-white" />
             </div>
             <div className="text-left">
-              <div className="text-xl font-bold" style={{ color: "hsl(220, 90%, 25%)" }}>BEMS</div>
+              <div className="text-xl font-bold" style={{ color: "hsl(220, 90%, 25%)" }}>TAIN ElectAI</div>
               <div className="text-xs text-gray-500">Bank Election Management System</div>
             </div>
           </div>
@@ -65,7 +65,7 @@ export default function LoginPage() {
                 <Label htmlFor="loginId">Login ID</Label>
                 <div className="relative">
                   <User className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400" />
-                  <Input id="loginId" type="text" placeholder="e.g. ROOT001, SA001, DIR001, AGT001"
+                  <Input id="loginId" type="text" placeholder="Enter your Login ID"
                     value={loginId} onChange={e => setLoginId(e.target.value.toUpperCase())}
                     className="pl-10" required disabled={loading} autoFocus />
                 </div>
